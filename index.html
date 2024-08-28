@@ -9,27 +9,44 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Site simples</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./src/styles.css">
 </head>
 
-<body class="flex flex-col min-h-screen">
-    <header>
-        <nav class="justify-start flex align-top mt-20">
-            <ul class="ml-60 ">
-                <li class="text-[#89C5CC] font-bold text-3xl font-sans">treine.me</li>
-            </ul>
-            <ul class="flex space-x-16 ml-auto mr-60 ">
-                <li class="text-3xl text-[#1F1534]"><a href="Home.html">Home</a></li>
-                <li class="text-3xl text-gray-400"><a href="Sobre.html">Sobre</a></li>
-                <li class="text-3xl text-gray-400"><a href=" Treinar.html">Treinar</a></li>
-            </ul>
-        </nav>
+<body class="flex flex-col min-h-screen ">
+    <header class="justify-start flex align-top mt-20">
+        <ul class="treineme ml-60 ">
+            <li class="text-[#89C5CC] font-bold text-3xl font-sans">treine.me</li>
+        </ul>
+        <ul class="flex space-x-16 ml-auto mr-60 ">
+            <li class="text-3xl text-[#1F1534]"><a href="Home.html">Home</a></li>
+            <li class="text-3xl text-gray-400"><a href="Sobre.html">Sobre</a></li>
+            <li class="text-3xl text-gray-400"><a href=" Treinar.html">Treinar</a></li>
+        </ul>
     </header>
-    <div>
-        <div></div>
-        <div></div>
-    </div>
-    <footer class="text-center py-10">
-        fale concosco no instagram <strong>@treine.me</strong>
+    <main class="flex-grow grid grid-cols-2 items-center justify-center ml-32 mr-60">
+        <div class="flex flex-col items-start justify-center space-y-10 mx-auto">
+            <h1 class="text-5xl">
+                Treinos <span class="text-[#89C5CC]">exclusivos <br></span>para você!
+            </h1>
+            <p class="text-[#7D7987]">
+                Nós criamos treinos <span class="font-bold">exclusivos e únicos para você.</span><br>Invista no seu
+                corpo e <span class="font-bold">tenha muito mais performance</span>
+                e<br> qualidade de vida.
+            </p>
+            <a href="https://www.whatsapp.com/">
+                <button class="bg-transparent border-none">
+                    <img src="./img/Primary.png" alt="Botão icone whatsApp" class="w-auto h-auto">
+                </button>
+            </a>
+        </div>
+        <div class="flex items-center justify-center">
+            <img src="./img/Right.png" alt="Imagem de uma mulher fazendo yoga e um homem fazendo exercicios fisicos ">
+        </div>
+    </main>
+
+    <footer class="text-center py-10 mt-auto">
+        <a href="">fale conosco no instagram <strong>@treine.me</strong></a>
     </footer>
 </body>
 

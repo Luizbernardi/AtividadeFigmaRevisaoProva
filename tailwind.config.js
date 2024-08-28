@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -12,10 +12,23 @@ module.exports = {
         orangetext: '#C25500',
         tela1white: '#ffffff',
         navgren: '#89C5CC',
-
-      }
+      },
+      borderWidth: {
+        'custom': '3px',
+      },
+      borderColor: {
+        'custom': '#7D7987',
+      },
     }
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-shadow-custom': {
+          textShadow: '4px 8px 12px rgba(0, 0, 0, 0.5)', // Valores aumentados para uma sombra mais evidente
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }
+  ],
 }
-
